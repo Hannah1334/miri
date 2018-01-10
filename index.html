@@ -1,0 +1,595 @@
+<style>
+body{
+background-color:#666666;
+background-image: url('') !important; 
+background-repeat:no-repeat !important; 
+background-position:left !important; 
+background-size:contain;
+}
+
+::-webkit-scrollbar {width: 5px; height: 5px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #666666;}
+
+#weavebox1 {
+position:absolute;
+height:50%;
+width:5%;
+top:25%;
+left:46%;
+background-image: url('https://i.imgur.com/3OSND1b.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#weavebox2 {
+position:absolute;
+height:50%;
+width:5%;
+top:25%;
+left:49.5%;
+background-image: url('https://i.imgur.com/rU09WLZ.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+}
+
+#bigtitle1 {
+position:absolute;
+width:40%;
+height:6%;
+left:30%;
+top:15%;
+text-align:center;
+color:#999999;
+font-size:180%;
+font-family:Macondo;
+letter-spacing:10px;
+}
+
+#bigtitle2 {
+position:absolute;
+width:40%;
+height:10%;
+left:30%;
+top:80%;
+text-align:center;
+color:#666666;
+font-size:300%;
+font-family:Miss Fajardose;
+letter-spacing:10px;
+}
+
+#bigtab1 {
+position:absolute;
+border:2px solid #ffffff;
+width:20%;
+height:50%;
+top:25%;
+left:25%;
+background-image: url('https://i.imgur.com/X57TQdb.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab1:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab2 {
+position:absolute;
+border:2px solid #ffffff;
+width:20%;
+height:50%;
+top:25%;
+left:55%;
+background-image: url('https://i.imgur.com/6j5EZAV.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigtab2:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.bigtabs {
+display:block;
+width:100%;
+height:100%;
+opacity:0;
+text-align:center;
+color:#ffffff;
+font-size:100%;
+font-family:Macondo;
+letter-spacing:5px;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.bigtabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10 {
+display: none;
+}
+
+#content {
+position:absolute;
+width:100%;
+height:100%;
+top:0%;
+left:0%;
+background-color:#666666;
+}
+
+#picbox1 {
+position:absolute;
+border:2px solid #ffffff;
+width:20%;
+height:50%;
+left:15%;
+top:25%;
+background-image: url('https://i.imgur.com/urYWg7I.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#picbox1:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#subtitle1 {
+position:absolute;
+width:30%;
+height:6%;
+left:36%;
+top:25%;
+letter-spacing:3px;
+text-align:center;
+color:#999999;
+font-size:150%;
+font-family:Macondo;
+}
+
+#textbox1 {
+position:absolute; 
+overflow:auto;
+padding:1%;
+border:2px solid #ffffff;
+background-color:#cccccc;
+width:28%;
+height:39%;
+top:31.75%;
+left:36%;
+font-size:80%;
+color:#000000;
+font-family:Open Sans Condensed;
+}
+
+#tabbox1 {
+position:absolute;
+border:2px solid #ffffff;
+width:5%;
+height:50%;
+left:67%;
+top:25%;
+background-image: url('https://i.imgur.com/iIdF3VE.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+border:2px solid #ffffff;
+width:5%;
+height:50%;
+left:72.5%;
+top:25%;
+background-image: url('https://i.imgur.com/6AFSqpG.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3 {
+position:absolute;
+border:2px solid #ffffff;
+width:5%;
+height:50%;
+left:78%;
+top:25%;
+background-image: url('https://i.imgur.com/UBCnQ4m.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox3:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs {
+display:block;
+opacity:1;
+width:100%;
+height:100%;
+text-align:center;
+color:#ffffff;
+font-size:100%;
+writing-mode: vertical-lr;
+text-orientation: sideways;
+font-family:Macondo;
+letter-spacing:5px;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:0;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#picbox2 {
+position:absolute;
+border:2px solid #ffffff;
+width:20%;
+height:50%;
+left:15%;
+top:25%;
+background-image: url('https://i.imgur.com/FoUNb1q.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#picbox2:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#subtitle2 {
+position:absolute;
+width:30%;
+height:6%;
+left:36%;
+top:25%;
+letter-spacing:3px;
+text-align:center;
+color:#999999;
+font-size:150%;
+font-family:Macondo;
+}
+
+#textbox2 {
+position:absolute; 
+overflow:auto;
+padding:1%;
+border:2px solid #ffffff;
+background-color:#cccccc;
+width:28%;
+height:39%;
+top:31.75%;
+left:36%;
+font-size:80%;
+color:#000000;
+font-family:Open Sans Condensed;
+}
+
+#tabbox4 {
+position:absolute;
+border:2px solid #ffffff;
+width:5%;
+height:50%;
+left:67%;
+top:25%;
+background-image: url('https://i.imgur.com/6mltEP0.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+border:2px solid #ffffff;
+width:5%;
+height:50%;
+left:72.5%;
+top:25%;
+background-image: url('https://i.imgur.com/nycw31b.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6 {
+position:absolute;
+border:2px solid #ffffff;
+width:5%;
+height:50%;
+left:78%;
+top:25%;
+background-image: url('https://i.imgur.com/0Qa0VUh.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox6:hover {
+-webkit-filter: grayscale(0%);
+filter: grayscale(0%);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+h1 {
+color:#ffffff;
+border-left: 6px solid #2e4746;
+background-color: #888888;
+font-family:Ubuntu;
+font-size:100%;
+}
+
+b {
+color:#2e4746;
+font-family:Ubuntu;
+font-size:100%;
+letter-spacing:1px;
+}
+
+i {
+color:#666666;
+}
+
+a {
+color:#2e4746;
+}
+</style>
+
+<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), progress !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Macondo|Ubuntu|Open+Sans+Condensed:300" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('textbox1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('picbox1').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('textbox2').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation4(id) {document.getElementById('picbox2').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="content">
+<div id="bigtitle1">
+Two Sides of the Same Coin
+</div>
+
+<div id="weavebox1">
+</div>
+<div id="weavebox2">
+</div>
+
+<div id="bigtab1">
+<span class="bigtabs" onClick="changeNavigation ('tab1')">Miriana</span>
+</div>
+
+<div id="bigtab2">
+<span class="bigtabs" onClick="changeNavigation ('tab2')">Weaver</span>
+</div>
+</div>
+
+<div id="tab1">
+<div id="picbox1"></div>
+<div id="subtitle1">Romanian Sunflower</div>
+<div id="textbox1">
+<h1>Basic Information</h1>
+<b>Name:</b> Miriana Moldoveanu<br>
+<b>Nickname:</b> Miri<br>
+<b>Hero Alias:</b> Madam Weaver<br>
+<b>Age:</b> Nineteen<br>
+<b>Birthdate:</b> July 13th<br>
+<b>Gender:</b> Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Species:</b> Human<br>
+<b>Race:</b> Romanian<br>
+<b>Talents:</b> Energy Weaving<br>
+<b>Height:</b> 5'10"<br>
+<b>Weight:</b> 130 lbs.
+</div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation1 ('tab3'); onClick=changeNavigation2 ('tab4')">Details</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation1 ('tab5'); onClick=changeNavigation2 ('tab6')">Backstory</span>
+</div>
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab2')">Abilities</span>
+</div>
+
+<div id="tab3"><h1>Detailed Information</h1>
+<img align="right" style="height:80%;" src="https://i.imgur.com/i9pqxMO.png"/>
+<b>Appearance</b><br>
+Despite being on the taller end of average human female height, there is nothing truly defining about Miriana's figure. She retains a common hourglass shape with pronounced female attributes like most woman, staying at a healthy weight and even developing a slight layer of muscle under her smooth naturally tanned flesh. Deep brown hair, long enough to fall to her waist, frames a pretty and ovular European face, accented by big brown eyes as deep in color as her typically straight locks.
+<br><br>
+<b>Personality</b><br>
+Miriana is a very serious and simple individual. She is by no means shy, and prefers the presence of others to being completely alone or isolated, but can adapt herself to survive on her own if the need arises. Things such as sarcasm, and other forms of quick in-the-moment comedy, often pass right over her head. While her gullible-ness can be argued as justified in that she is a Romanian surrounded by foreign English speakers and is still adapting to the language, had English been her first language her personality and demeanor would remain exactly the same.
+</div>
+<div id="tab4"><img style="width:100%;height:100%;" src="https://i.imgur.com/taKll9J.jpg"/></div>
+
+<div id="tab5"><h1>History & Lore</h1>
+Miriana's place of birth was perhaps one of the most legend-hearty and myth-rich countries in the world; the gorgeous land of Romania. Well, at least the tourist attractions were incredibly beautiful, but its people were not wealthy. Her parents were very poor hardworking people, who spent many hours working factory and field jobs, often unintentionally abandoning their child for days at a time. Rather than do things like go to school, Miriana took advantage of her parents' absences and spent her time among the homeless children in the streets. Before too long, she actually became one of them. Her parents died of illness and extreme exhaustion, truly leaving her alone in the world, and unable to face the truth of their preishing at such a young age she just ran away. Walked out of the door and never looked back.
+<br><br>
+During the year of her tenth birthday, a group of men chased and cornered the girl, throwing her into a van with a few other captured children. That was the last time she'd ever experienced freedom. From there, Miriana was inserted into a combination of captive prison and slave-training. She was forced to undergo a series of "challenges" so her spirit could be broken into a slave mentality, and once she stopped fighting back they began forcing her to develop specific skills. Things like cleaning, cooking, sewing, even weaving and crocheting, all constantly filled her days and nights, one after another. By the time she picked up weaving it became clear quickly that she possessed a natural talent for it. One night, when practicing the craft alone, she started to glow and suddenly the energies of the world around her all thrashed around her body violently, extending physical strings from every little hairtip. Keeping her newfound powers as secret as possible, Miriana practiced alone when she was certain the coast was clear, experimenting with her strange abilities. As it turned out, she was able to intentionally mix energies in a way that produced typically unexpected events such as miracles, or even disasters. It would be years yet before the girl actually understood this phenomena for herself, but her lack of knowledge did not dissuade her new passion.
+<br><br>
+Eventually a buyer purchased the girl, and she was illegally smuggled out of her own country into a completely foreign one. She was told that she would have a place to live as long as she promised to keep the charade that this nice family had adopted her, and opened their home from the kindness of their hearts. In reality, she was more of a live-in maid, required as soon as she arrived to start her work. Like a Romanian Cinderella, she cooked and cleaned and faced prejudice abuse from those who purchased her, with nowhere to go and no way to escape. Practicing her energy weaving gave her hope, and renewed some of her old stubbornness, giving her the drive to find the opportunities to escape. Several times she made it out of the estate, only to be caught by hired help, and forced right back to work after severe beatings and extreme punishments. Her workload increased in attempts to subdue all her strength, but her resolve only grew in strength. With nothing left to lose, Miriana made her final escape attempt, and got all the way to the local authorities. At first she assumed they would help her, and it seemed as though they would do more than just arrest her captors, but when their intentions to send her right back where she came from resurfaced the girl panicked, and took back to the streets. She spent so much time constantly on the run that eventually she collapsed in her exhaustion, right into the arms of a kindhearted stranger.
+<br><br>
+A young man, close in age to the woman herself, offered her a safe place to clean up and rest. With nowhere to go she had no choice but to trust him, but her suspicions were all proven wrong. Accepting the offer to become his roommate, she relaxed into her new atmosphere, and got to know the man who opened his humble home to her. There was nothing particularly "special" about him, so to speak, and he wasn't wealthy in any sense of the word, but their friendship grew quickly into something more. Before too long the two became a steady couple, and her arrangements to live under his roof became more solid and permanent.
+<br><br>
+During their time together, she began engaging in his activities, using her powers to benefit him. When he began manifesting strange abilities of his own, she helped him in any way she could, although it was admittedly hard since she knew little to nothing about her own powers. They became a team, his role the front offense and face, her job the background support.
+</div>
+<div id="tab6"><img style="width:100%;height:100%;" src="https://i.imgur.com/ZXYYCxH.jpg"/></div>
+
+<iframe width="3%" height="6%" src="https://www.youtube.com/embed/oc_wE1sIVoc" frameborder="0"></iframe>
+</div>
+
+<div id="tab2">
+<div id="picbox2"></div>
+<div id="subtitle2">Madam Weaver</div>
+<div id="textbox2">
+<h1>Core Ability</h1>
+<b>Strings of Life</b><br>
+Energy and life often exist in parallel, sometimes weaving with each other to create various phenomena. The two truths are intertwined, although it is more rare for living beings--such as humans--to manipulate the energy aspects as they can the physical. Miriana herself acts as a static attraction for ambient life energy, and can channel it into a physical enough form so she can manipulate it. For her, it manifests as glowing strings of light, different colors representing different kinds. Weaving them together can create "disasters" or "miracles" depending on the nature of power and shift in reality the intertwining energies cause.
+<br>
+Doing the actual act of weaving can be done with her hands, but is not required, as she is manipulating energy and can pull off simple designs with her mind alone. The more complicated an energy weave, the more physically hands-on she'll have to be with the ability.
+<br><br>
+<h1>Activate-able Abilities</h1>
+<b>The Miracle of Endurance</b><br>
+The collision of pink and violet energy strings will create a miracle, blessing Miriana and up to three nearby allies with slightly increased endurance (x1.5). If she continues to weave the them together into a legitimate pattern for an extra rotation, another slight buff will be added on top of the first (also x1.5) but to her and her allies' overall speed.
+<br><br>
+<b>The Disaster of Vertigo</b><br>
+When choosing to draw purple and green together and bend them around one another, Miriana instead creates a debuff to be cast on up to three nearby enemies. This particular debuff manifests by coating the area with a strong smelling gaseous substance which causes vertigo upon inhalation, not enough to merit loss of balance but at least enough to cause a bit of nausea and make focusing a little harder. Should extra rotations be spent actively weaving these two colors into a far more complicated pattern, inhalation will instead cause the stomach to heave until it is emptied, and for each extra rotation spent the number of enemies that can be effected at once by inhaling the smoke will increase by one. This caps at five possible enemies.
+<br><br>
+<b>Maelstrom!</b><br>
+The collision between strands of blue and white will cause a very intense--but also very momentary--burst of wind Miriana is able to control with sheer will alone just enough to give it a general direction. The sudden aero-based-force can be used to pulse out away from her violently for up to a quick five feet from her body, or it can be used to pick her up and move her five feet in her desired direction at a moment's notice. If an extra rotation is spent increasing the intricacy of her woven pattern, she is capable of doubling its distance of travel (caps at ten feet) and if yet another extra rotation is devoted to further increasing the intricacy of the weave's design, she is capable of manifesting and directing two short bursts at once.
+</div>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation3 ('tab7'); onClick=changeNavigation4 ('tab8')">Inventory</span>
+</div>
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation3 ('tab9'); onClick=changeNavigation4 ('tab10')">Details</span>
+</div>
+<div id="tabbox6">
+<span class="tabs" onClick="changeNavigation ('tab1')">Secret Identity</span>
+</div>
+
+<div id="tab7"><h1>Inventory</h1>
+<b>Staff</b><br>
+A metal staff that can be shortened to be no longer than a single foot, or lengthened to five whole feet, all by the simple press of a button. It only measures to be about two inches in width.
+<br><br>
+<b>Supersuit</b><br>
+There's nothing actually "super" about the attire, as it is made entirely out of completely normal and common fibers (such as cotton and polyester). It consists of a pair of gloves, foot wrappings, knee wrappings, a mask, and a main leotard with fabric draped over to give it more personality. (An accurate representation of the suit can be found in the image provided under the "Abilities" section, while the landing page showing first two options shows an accurate depiction of the mask in the clickable image that brings one here, titled "Weaver" when the mouse hovers over it.)
+</div>
+<div id="tab8"><img style="width:100%;height:100%;" src="https://i.imgur.com/6mltEP0.jpg"/></div>
+
+<div id="tab9"><h1>Detailed Information</h1>
+<b>Appearance</b><br>
+Miri and Weaver's physique do not change, but her colors and base aesthetics most certainly do. Whenever she channels energy through her body in order to allow it to manifest in a semi-physical form, her hair and eyes glow the same colors as the strings she is currently manipulating. Likewise, tribalistic markings light up her skin like luminescent tattoos, also matching the energy in color. This makes it impossible for her to be allowed to use her powers when out of costume, simply because the correlation would be far too obvious.
+<br><br>
+<b>Personality</b><br>
+The freedom of semi-anonymity has allowed her to manifest a set of slightly different personality traits when putting on her mask and engaging in her hero persona. While typically very serious and reserved, she feels more free to express her emotion and is far more susceptible to the danger of her heart ruling out her head. She has the potential to be more aggressive or foolish, should she feel too strongly, and act on her emotions rather than logical thoughts and conclusions.
+</div>
+<div id="tab10"><img style="width:100%;height:100%;" src="https://i.imgur.com/lYJNKRl.jpg"/></div>
+
+<iframe width="3%" height="6%" src="https://www.youtube.com/embed/Dk_OLEuYynw" frameborder="0"></iframe>
+</div>
